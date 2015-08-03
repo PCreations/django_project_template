@@ -28,8 +28,8 @@ PROJECT_ROOT = os.path.abspath(os.path.join(CONFIG_ROOT, os.pardir))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
-#delete this statement after exporting the DJANGO_SECRET_KEY
-SECRET_KEY = {{ secret_key }}
+#delete this statement after exporting the DJANGO_SECRET_KEY with this value
+SECRET_KEY = '{{ secret_key }}'
 SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
